@@ -1,0 +1,43 @@
+/* General styles*/
+body {
+  background-image: url("transp-bg.png");
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  transition: all .5s ease;
+  font-family: monospace;
+}
+/* End General styles*/
+
+
+/* Slide */
+div.dogBlock {
+  margin: 1em;
+}
+
+div.dogBlock img {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+div.dogBlock {
+  border:1px solid rgba(105,105,105,.5);
+  padding: .7em;
+  color: black;
+  display: none;
+}
+
+div.dogBlock.current {
+  display: block;
+}
+/* End Slide*/
+
+/* Arrows*/
+.controls .arrows {
+  font-size: 4em;
+  margin: .25em;
+  cursor: pointer;
+}
+/* End Arrows*/

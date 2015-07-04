@@ -1,0 +1,388 @@
+body {
+	background-color: #525990;
+	font-family: arial,verdana;
+	font-size: 10pt;
+	text-align: left;
+	margin: 0px;
+}
+
+#page {
+	background-color: #ffffff;
+	width: 840px;
+	margin: auto;
+}
+
+#main {
+	width: 740px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#content {
+	background-color: white;
+	padding-bottom: 30px;
+	text-align: left;
+}
+
+/* Main page images */
+#images {
+	width: 350px;
+	float: left;
+	background-color: white;
+	padding-bottom: 30px;
+}
+
+#images img {
+	margin: 0px 5px 5px 0px;
+}
+
+#fac {
+	max-height:200px;
+}
+#lab {
+	max-height:325px;
+	max-width:425px;
+}
+
+a:link {
+	font-size: 95%;
+	color: 585FC0;
+	text-decoration: underline;
+}
+
+a:visited {
+	font-size: 95%;
+	color: 6E74C6;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-size: 95%;
+	color: 1D2049;
+	background-color: B0B3E0;
+	text-decoration: none;
+}
+
+/* Heading is the small nav menu in the top right corner */
+#banner {
+	background-color: #000000;
+	background-image: url('img/head.png');
+	display:block;
+	height: 105px;
+	width: 840px;
+	//text-indent:-9999px;
+	//color: gray;
+	//text-align: right;
+}
+
+#logo	{ 
+	display: block;
+	margin-top: 40px;
+	margin-left: 10px;
+	vertical-align:center;	
+	border: none;
+}
+
+#heading {
+	background-color: #000000;
+	color: gray;
+	text-align: right;
+}
+
+#heading #topnav {
+	padding-right: 10px;
+	position: relative;
+}
+
+#heading a {
+	font-size: 9pt;
+	color: ffffff;
+	text-decoration: none;
+}
+
+#heading a:visited {
+	font-size: 9pt;
+	color: ffffff;
+	text-decoration: none;
+}
+
+#heading a:hover {
+	font-family:arial, sans-serif;
+	font-size: 9pt;
+	color: dddddd;
+	text-decoration: underline;
+	background-color: 3e3e3e;
+}
+
+
+/* Main navigational menu */
+#nav {
+	background-color: #a9a9a9;
+	height: 20px;
+	padding: 5px 0px 2px 0px;
+	text-align: left;
+}
+
+#nav a {
+	color: 000000;
+	text-decoration: none;
+	font-family:arial, sans-serif;
+	margin: 0px 15px 0px 35px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#nav a:visited {
+	color: 000000;
+	text-decoration: none;
+	font-family:arial, sans-serif;
+	margin: 0px 15px 0px 35px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#nav a:hover {
+	color: ffffff;
+	text-decoration: underline;
+	background-color: aaaaaa;
+	font-family:arial, sans-serif;
+	margin: 0px 15px 0px 35px;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+#mcontent {
+	width: 350px;
+	float: right;
+	background-color: white;
+	padding-bottom: 30px;
+	text-align: left;
+}
+
+h1 {
+	text-align: left;
+	margin: 20px 0px 10px 0px;
+	background-color: #a9a9a9;
+	padding: 10px;
+	font-weight: bold;
+}
+
+/* For subsequent lines in a H1 heading, to go in that grey box. */
+#subtitle {
+	text-align: left;
+	margin: -22px 0px 0px 0px;
+	padding-left: 13px;
+	padding-bottom: 10px;
+	background-color: #a9a9a9;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 0px;
+}
+
+h3 {
+	margin: 18px 0px 12px 0px;
+}
+
+h4 {
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	background-color: #eee;
+	padding: 5px;
+	font-size: 15px;
+	font-weight: bolder;
+	border-bottom: 1px solid #a9a9a9;
+}
+
+#degree h3 {
+/*	text-align: center; */
+	margin: 25px 0px 0px 0px;
+	background-color: #ccc;
+	padding: 5px;
+	font-size: 15px;
+	font-weight: bolder;
+	border-bottom: 1px solid #a9a9a9;
+}
+
+#netnewsbox {
+	border: 1px solid #a9a9a9;
+	padding: 0px;
+	clear:left;
+	text-align: left;
+	background-color: white;
+	padding-bottom: 0px;
+}
+
+#netnewsenclosure {
+	padding-bottom: 30px;
+}
+
+#footer {
+	background-color: #000000;
+	clear: both;
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	font-size: 8pt;
+}
+
+.bluebgh1 {
+	background-color: #8cf;
+	text-align: left;
+	margin: 20px 0px 10px 0px;
+	padding: 2px 8px 2px 8px;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.bluebgh2 {
+	background-color: #8cf;
+	text-align: left;
+	margin: 20px 0px 10px 0px;
+	padding: 2px 8px 2px 8px;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+#messageArea p {
+ 	border-left:  3px solid #666; 
+	padding: 5px 0px 5px 15px;
+	margin: 2px 50px 10px 25px;
+	font-weight: normal;
+}
+
+#messageArea li {
+	margin: 10px 0px 0px 0px;
+}
+
+#messageArea2 {
+	padding: 0.5em;
+	background-color: #eee;
+	border-top:    1px solid #ccc; 
+	border-left:   1px solid #ccc; 
+	border-bottom: 3px solid #ccc; 
+	border-right:  3px solid #ccc; 
+	-moz-border-radius: 1em; 
+}
+
+#indent {
+	margin: 0px 0px 0px 30px;
+}
+
+#subnote {
+	font-size: 9pt;
+	font-style: italic;
+	margin: 5px 150px 0px 40px;
+}
+
+pre {   
+        font-family: "Courier New";
+	font-size: 9pt;
+}
+#faculty img {
+	max-height: 200px;
+}
+#faculty h3 {
+	margin: 18px 0px 2px 0px;
+}
+
+#faculty h5 {
+	margin: 2px 0px 18px 0px;
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+#border td { 
+	border-bottom: 2px solid #666; 
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.tblbasic {
+  background-color: #eee;
+  border-spacing: 0px;
+  border: 1px solid #CACACA;
+  border-bottom: 0;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.tblbasic thead {
+  font-weight: bold;
+}
+
+.tblbasic th {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.tblbasic td {
+  padding: 8px;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.tblbasic td+td, .tblbasic th+th {
+  border-left: 1px solid #D4D4D4;
+}
+
+
+#changelog {
+	margin: auto;	
+}
+
+#changelog p {
+ 	border-left: 3px solid #666; 
+	padding: 5px 0px 5px 10px;
+	margin: 5px 10px 3px 25px;
+}
+
+#changelog .item {
+	border: 1px dashed #333;
+	background: #eee;
+	padding: 8px;
+	margin: 12px 0 12px 0;
+}
+
+#changelog h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+#changelog h4 {
+	text-align: left;
+	background-color: inherit;
+	margin: 0 0 0 25px;
+	padding: 0;
+	font-size: 8pt;
+	border-bottom: 0;
+	font-weight: bold;
+}
+
+.toybox_table {
+	border: 1px solid black;
+	width: 90%;
+	border-spacing: 0px;
+	font-size: 13px;
+	border-style:none;
+	border-collapse:collapse;
+}
+
+.toybox_table td {
+	border: 1px solid black;
+	height: 40px;
+}
+
+.dottedhr {
+	color: #fff; 
+	background-color: #fff; 
+	border: 1px dotted #000000; 
+	border-style: none none dotted; 
+}

@@ -1,0 +1,41 @@
+
+
+
+body {
+	margin: 0;
+}
+div.hero {
+	background-image: url('http://placehold.it/480x250/FD0808');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 100%;
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media all and (min-width: 481px) {
+
+
+	div.hero {
+		background-image: url('http://placehold.it/1024x350/0DCB08');
+		height: 350px;
+	}
+}
+/* END MEDIA QUERY FOR TABLET */
+
+/* MEDIA QUERY FOR DESKTOP */
+@media all and (min-width: 1025px) {
+
+
+	div.hero {
+		background-image: url('http://placehold.it/1920x450/0022CD');
+		height: 450px;
+	}
+}
+/* END MEDIA QUERY FOR DESKTOP */
+
+.clear:after {
+	clear: both;
+	content: "";
+	display: table;
+}

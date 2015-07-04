@@ -1,0 +1,110 @@
+//Being able to nest things is real cool.
+
+
+
+//I was originally using the background color from the old page, but I don't like it.
+@hoverState: #B232D5;
+//navbar
+
+nav {
+  position: fixed;
+
+  &.navbar {
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+//large header
+.headerTitle {
+  border-bottom: 3px solid @hoverState;
+  background-color: black;
+  //From Subtlepatterns.com
+  background-image: url("black_lozenge.png");
+  .container {
+    color: #ffffff;
+  }
+  h1 {
+    vertical-align: middle;
+    padding: .5em;
+    font-size: 5em;
+  }
+}
+//Individual sections
+.row.topics {
+  section {
+    padding-bottom: .5em;
+    margin: 2.5em 0 2.5em 0;
+    &:not(:last-child) {
+      border-bottom: 1px dotted black;
+    }
+    ul {
+      list-height: 1.35em;
+      li {
+        font-size: 1.5em;
+        a {
+          color: black;
+          padding-bottom: .25em;
+        }
+      }
+    }
+    h2 {
+      cursor: pointer;
+      &:hover , &:focus{
+        color: @hoverState;
+      }
+      i {
+      margin-right: .8em;
+      opacity: .7;
+      }
+      span.arrow i {
+        transition: all .5s ease;
+        position: absolute;
+        right: 0;
+        &.pointDown {
+          transform: rotate(90deg);
+        }
+
+      }
+    }
+    >div {
+      float: none;
+      padding: 1em 0 1em 0;
+      display: none;
+    }
+  }
+}
+//All uls, on purpose. Even the ones in the nav
+ul {
+  li {
+
+    a {
+
+    position: relative;
+    &:hover , &:focus{
+      color: initial;
+      text-decoration: none;
+      &:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+    //Hidden by default
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: @hoverState;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+    }
+  }
+}

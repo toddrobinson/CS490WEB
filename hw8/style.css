@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
+/* General styles*/
+body {
+  background-color: #ffffff;
+  /* Background image from subtlepatterns.com*/
+  background-image: url("footer_lodyas.png");
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  transition: all .5s ease;
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.8em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: monospace;
+}
+/* End General styles*/
+
+
+/* Slide */
+div.dogBlock {
+  margin: 1em;
+  border: 1px solid #B2326B;
+  padding: .7em;
+  color: #ffffff;
+  display: block;
+  border-radius: 5px;
+}
+
+div.dogBlock img {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* End Slide*/
+
+/* Controls*/
+.controls {
+  color: #B2326B;
+  padding: 1em;
+}
+.controls .arrows {
+  font-size: 4em;
+  margin: .25em;
+  cursor: pointer;
+}
+
+.controls .arrows:hover {
+  color: #EF589B;
+}
+
+.controls h4 {
+ text-decoration: underline;
+ color: white;
+}
+/* End Controls*/

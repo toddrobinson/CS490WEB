@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pets">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>Robinson, Todd. HW8</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body ng-controller="SlidesController as slidesCtrl">
+
+    <div class="controls text-center">
+      <!--  Sends either right or left to the changeSlide method -->
+      <span class="arrows glyphicon glyphicon-menu-left" id="leftControl" ng-click="slidesCtrl.changeSlide('left')"></span>
+      <span class="arrows glyphicon glyphicon-menu-right" id="rightControl" ng-click="slidesCtrl.changeSlide('right')"></span>
+      <h4 class="text-center">Slide: {{slidesCtrl.currentSlideNumber + 1}} / {{slidesCtrl.numberOfSlides}}</h4>
+    </div>
+  <div class="container">
+    <div class="imageContainer col-md-12" >
+      <div class="dogBlock" id="{{slide.id}}" ng-repeat="slide in slidesCtrl.slides" ng-show="slidesCtrl.currentSlide.id == slide.id">
+        <figure>
+          <h2 class="text-center">{{slide.name}}</h2>
+          <img class="img-responsive" ng-src="{{slide.filename}}">
+          <figcaption>
+            {{slide.description}}
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

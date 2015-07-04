@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Robinson, Todd HW3</title>
+	<!-- 
+		Using maxcdn's version of the font-awesome css for the icons.
+		Utilizing the google fonts service.
+		Using the google hosted lib for jQuery version 2.1.3
+	 -->
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<!-- Div for pull down from top of the page.-->
+	<div class="fullWidthBackgroundPadded pullDown">
+		<div class="wrapper clear">		
+			<img src="http://placehold.it/200x140" alt="Placeholder image">
+			<div>	
+				<p>Homework #3 for CS490 (web). Duplicating look and feel of website.</p>
+				<p><a href="https://developer.mozilla.org/en-US/">Link to original site.</a></p>
+			</div>	
+		</div>
+	</div>
+	<!-- The header is split into two divs, which really doesn't need to happen, but it's like that.  -->
+	<div class="fullWidthBackgroundPadded mainHeader sep">
+			<header class="clear">
+				<!-- The first main header  is split into two sections for the login/pull down, and then the nav elements-->
+				<div class="topOfHeader clear">
+					<div class="mozillaBannerDrop">
+						<img src="http://placehold.it/100x40&amp;text=pull-down" alt="">
+					</div>					
+					<div class="signIn">
+						<span>
+							Sign in with
+							<!-- Can use the stack feature with font awesome to combine icons-->
+							<span class="fa-stack">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-user fa-stack-1x"></i>
+							</span>
+							
+						</span>
+					</div>
+
+				</div>
+				<!--  Nav section that contains nav elements.-->
+				<div class="bottomOfHeader">
+					<div class="homeLink">
+						<a href="https://developer.mozilla.org/en-US/"><img src="http://placehold.it/205x40&amp;text=MDN+actual+link" alt="Filler for home link"></a>
+					</div>
+
+					<nav class="headerNav">
+						<ul>
+							<li><a href="#">Zones <i class="fa fa-caret-down"></i></a></li>
+							<li><a href="#">Web Platform <i class="fa fa-caret-down"></i></a></li>
+							<li><a href="#">Tools</a></li>
+							<li><a href="#">Demos</a></li>
+							<li><a href="#">Connect</a></li>
+							<li id="searchMagnify"><i class="fa fa-search"></i></li>
+						</ul>
+					</nav>
+				</div>
+
+			</header>
+	</div>
+	<!-- Second main header, which doesn't really make sense, although they share the same background image, so that was the purpose-->
+	<!-- Contains expanded duplicate of the elements in the nav, but with more details -->
+	<div class="fullWidthBackgroundPadded mainHeader">
+			<div class="documentCallouts">
+				<div class="centeredSearch">
+					<div class="knowledge">
+
+						<h1>
+							Shared knowledge <br><!-- Use of br tage is questionable.-->
+							<span class="leftOffset20">for the Open Web</span>
+						</h1>		
+					</div>
+					<div class="centeredInput">
+						<input type="text" placeholder="Search the docs">
+					</div>
+				</div>
+				<!-- Feature columns are own entity, but refer back to the main nav. Contain a title that has a font awesome icon in it, then there is a ul list-->
+				<div class="featureColumns clear">
+					<div class="featureColumn">
+						<h3>
+							<i class="fa fa-file-text-o"></i>
+							<span>
+								Web <br> Platform
+							</span>
+						</h3>
+							<ul>
+								<li><a href="#">Web APIs &amp; DOM</a></li>
+								<li><a href="#">HTML</a> &amp; <a href="#">HTML5</a></li>
+								<li><a href="#">CSS</a> &amp; <a href="#">CSS3</a></li>
+								<li><a href="#">JavaScript</a></li>
+								<li><a href="#">More...</a></li>
+							</ul>
+						
+
+					</div>
+					<div class="featureColumn">
+						<h3>
+							<i class="fa fa-briefcase"></i>
+							<span>Zones</span>
+						</h3>	
+							<ul>
+								<li><a href="#">Firefox</a></li>
+								<li><a href="#">Firfox OS</a></li>
+								<li><a href="#">Firefox Marketplace</a></li>
+								<li><a href="#">App Center</a></li>
+								<li><a href="#">Add-ons</a></li>
+							</ul>
+
+					</div>
+					<div class="featureColumn">
+						<h3>
+							<i class="fa fa-wrench"></i>
+							<span>Developer <br> Tools</span>
+						</h3>
+							<ul>
+								<li><a href="#">Firefox OS App manager</a></li>
+								<li><a href="#">Page Inspector</a></li>
+								<li><a href="#">JavaScript Debugger</a></li>
+								<li><a href="#">Web Console</a></li>
+								<li><a href="#">more...</a></li>
+							</ul>
+						
+
+					</div>
+					<div class="featureColumn">
+						<h3>
+							<i class="fa fa-certificate"></i>
+							<span>Connect</span>
+						</h3>
+							<p>Get Web technology news from Mozilla, get help from other developers, and more!</p>
+							<p><a href="#">Learn more and sign up</a></p>
+
+					</div>
+
+				</div>
+			</div>
+	</div>
+	<!-- Call to action section that has full size links to different calls. Each one has a background image, and bg color. Uses font awesome arrow-->
+	<div class="fullWidthBackgroundPadded callsToAction clear">
+		<div class="callsContainer">
+			<div class="calls callWebApp">
+				<a href="#">
+					<span>
+						Create <br> Web Apps
+					</span>
+					<i class="fa fa-arrow-right fa-2x"></i>
+				</a>
+			</div>
+
+			<div class="calls callFirefoxAndroid">
+				<a href="#">
+					<span>Develop<br>Firefox for Android</span>
+					<i class="fa fa-arrow-right fa-2x"></i>
+				</a>
+			</div>
+
+			<div class="calls callFirefoxOS">
+				<a href="#">
+					<span>Build<br>Firefox OS</span>
+					<i class="fa fa-arrow-right fa-2x"></i>
+				</a>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Section with blog post teasers and a side bar -->
+	<div class="fullWidthBackgroundPadded blogPostsMainLeft clear">
+		<!-- The blog posts section has a header, each post has a h2 title, blog post exerpt, and meta information -->
+		<div class="hacksAndCallWrapper">
+			<div class="hacksBlogSection">
+				<h2 class="hacksBlogHeader">
+					<i class="fa fa-star fa"></i>
+					Hacks Blog
+					<span id="hacksReadMore"><a href="#">read more at hacks.mozilla.org <i class="fa fa-arrow-right"></i></a></span>
+				</h2>
+				<article class="blogPostTeaser">
+					<h3 class="title"><a href="#">Post Title</a></h3>
+					<p class="articleStart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, debitis voluptatum dicta pariatur deserunt blanditiis impedit nesciunt minima quia recusandae voluptatibus saepe nam numquam, nemo autem repellat excepturi repellendus. Nisi...</p>
+					<span class="postMeta">Posted Month, xx, 2015 by First last</span>
+				</article>
+				<article class="blogPostTeaser">
+					<h3 class="title"><a href="#">Post Title</a></h3>
+					<p class="articleStart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, debitis voluptatum dicta pariatur deserunt blanditiis impedit nesciunt minima quia recusandae voluptatibus saepe nam numquam, nemo autem repellat excepturi repellendus. Nisi...</p>
+					<span class="postMeta">Posted Month, xx, 2015 by First last</span>
+				</article>
+				<article class="blogPostTeaser">
+					<h3 class="title"><a href="#">Post Title</a></h3>
+					<p class="articleStart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, debitis voluptatum dicta pariatur deserunt blanditiis impedit nesciunt minima quia recusandae voluptatibus saepe nam numquam, nemo autem repellat excepturi repellendus. Nisi...</p>
+					<span class="postMeta">Posted Month, xx, 2015 by First last</span>
+				</article>
+				<article class="blogPostTeaser">
+					<h3 class="title"><a href="#">Post Title</a></h3>
+					<p class="articleStart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, debitis voluptatum dicta pariatur deserunt blanditiis impedit nesciunt minima quia recusandae voluptatibus saepe nam numquam, nemo autem repellat excepturi repellendus. Nisi...</p>
+					<span class="postMeta">Posted Month, xx, 2015 by First last</span>
+				</article>
+				<article class="blogPostTeaser">
+					<h3 class="title"><a href="#">Post Title</a></h3>
+					<p class="articleStart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, debitis voluptatum dicta pariatur deserunt blanditiis impedit nesciunt minima quia recusandae voluptatibus saepe nam numquam, nemo autem repellat excepturi repellendus. Nisi...</p>
+					<span class="postMeta">Posted Month, xx, 2015 by First last</span>
+				</article>
+
+
+			</div>
+			<!--  Sidebar -->
+			<div class="sideBarCallToAction">
+				<div class="getInvolved">
+					<a href="#">
+						<div>
+							<h4 class="title">Get Involved</h4>
+							<p>
+								<span class="row">
+									Join <span class="enlargedNumber">6388</span> contributors
+								</span>
+								<span class="row">
+									in <span class="enlargedNumber">42</span> languages and locales
+								</span>
+								<span class="row">
+									around the world.
+								</span>
+							</p>
+								<p class="helpButton">Help improve MDN</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<!--Demo section that has previews of demos. The individual demo items are being postioned with having a margin. Experimented with giving them a width so that they would all take up an equal section so the middle one would be better centered. -->
+	<div class="fullWidthBackgroundPadded demos">
+		<div class="demoIntro clear">
+			
+			<h2>
+			<i class="fa fa-magic"></i> See &amp; submit demos
+			<span><a href="#">MDN Demo Studio <i class="fa fa-arrow-right"></i></a></span>
+			</h2>
+		</div>
+		<!-- Demo items are wrapped in an a tag so they can go to the demo. Title underneath -->
+		<div class="demoIconsWrapper">
+			<div class="demoIcons clear">
+				<div class="demoItem">
+					<a href="#">
+						<img src="http://placehold.it/180x133" alt="Placeholder for demo image">
+						<span>Demo Title</span>
+					</a>
+				</div>
+				<div class="demoItem">
+					<a href="#">
+						<img src="http://placehold.it/180x133" alt="Placeholder for demo image">
+						<span>Demo Title</span>
+					</a>
+				</div>
+				<div class="demoItem">
+					<a href="#">
+						<img src="http://placehold.it/180x133" alt="Placeholder for demo image">
+						<span>Demo Title</span>
+					</a>
+				</div>
+				<div class="demoItem">
+					<a href="#">
+						<img src="http://placehold.it/180x133" alt="Placeholder for demo image">
+						<span>Demo Title</span>
+					</a>
+				</div>
+				<div class="demoItem">
+					<a href="#">
+						<img src="http://placehold.it/180x133" alt="Placeholder for demo image">
+						<span>Demo Title</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Made page markers with spans.-->
+		<div class="pageMarkerWrapper">
+			<div class="pageMarkers">
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+			</div>	
+		</div>
+	</div>
+	<!-- Section before footer. Visually blends with footer, but distinct thing. -->
+	<div class="fullWidthBackgroundPadded">
+		<section>
+			<h2 class="improveMDN">
+				<i class="fa fa-smile-o"></i>
+				Help Improve MDN
+			</h2>
+			
+			<div class="halfContainer clear">
+				<p class="missionJoin">
+					All parts of MDN (docs, demos, and the site itself) are created by an open community of developers. Please join us! Pick one of these ways to help:
+				</p>
+			</div>
+			<div class="halfContainer clear">
+				<div class="halfColumn">
+					<ul>
+						<li><a href="#">Getting started</a></li>
+						<li><a href="#">Editorial Thingy</a></li>
+						<li><a href="#">Techincal Other Thing</a></li>
+					</ul>
+				</div>
+				<div class="halfColumn">
+					<ul>
+						<li><a href="#">Translating</a></li>
+						<li><a href="#">Promoting MDN</a></li>
+						<li><a href="#">Contribute to codebase</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Footer section -->
+	<div class="fullWidthBackgroundPadded clear footerInfo">
+		<footer>
+			<div class="halfContainer copyrightInfo clear">
+				<img src="http://placehold.it/70x50" alt="Mozilla icon placeholder">
+				<em>
+					<span>&copy; 2005-2015 Mozilla Developer Network and individual contributors</span>
+					<span><br>Content is available under <a href="#">these licenses</a> &bull; <a href="#">About MDN</a> &bull; <a href="#">About MDN</a> &bull; <a href="#">About MDN</a> &bull; <a href="#">About MDN</a> </span>
+				</em>
+			</div>
+			<div class="halfContainer languageOption clear">
+				<div>
+					<em>Other languages</em>
+					<select name="languageSelection" id="langSelect">
+						<option value="abaza">Aбаза бызшва</option>
+						<option value="afrikaans">Afrikaans</option>
+						<option value="albanian">Shqiptar</option>
+						<option value="angika">अंगिका</option>
+						<option value="bulgarian">български език</option>
+						<option value="dakhini">دکنی</option>
+						<option value="danish">Dansk</option>
+						<option value="english" selected>English</option>
+						<option value="finnish">suomi</option>
+						<option value="lithuanian">Lietuvių</option>
+						<option value="magar">मगर भाषा</option>
+						<option value="min">闽语</option>
+						<option value="shona">Shona</option>
+						<option value="raga">Hano</option>
+						<option value="tamil"> தமிழ்</option>
+					</select>
+				</div>	
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>

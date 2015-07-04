@@ -1,0 +1,40 @@
+
+/* General body styles */
+body {
+  padding: 2em;
+  /* Background pattern from subtlepatterns.com */
+  background-image: url("dark_embroidery.png");
+  color: white;
+}
+/* End General */
+
+
+/* Form styles*/
+ form  div.form-group div .form-control.error{
+  border-color: #FF0500;
+  border-width: 2px;
+}
+
+form  div.form-group div .form-control.error:focus{
+  box-shadow: 1px 2px 2px #FF0500;
+}
+
+
+/* End Form styles */
+
+
+/*Animation styles */
+
+/* Delays so the elements seem to come in to the screen at different times */
+h1.animated {
+  -webkit-animation-delay: .4s;
+  -o-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.form-group > label {
+  -webkit-animation-delay: .2s;
+  -o-animation-delay: .2s;
+  animation-delay: .2s;
+}
+/*Animation styles */

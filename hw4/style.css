@@ -1,0 +1,74 @@
+/* Google font import */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
+/* The one percent margin needs to be taken into consideration.*/
+/* Based on a 12 grid system */
+
+/* START OF COLUMN RULES */
+.col-md-3 {
+	width: 98%;
+	margin: 1%;
+	float: left;
+}
+.col-md-12 {
+	width: 98%;
+	margin: 1%;
+}
+/* END OF COLUMN RULES */
+
+
+.row {
+	padding: 0 7% 0 7%;
+}
+/* GENERAL RULES */
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+h1,h2,h3,h4 {
+	font-size: 24px;
+}
+/* END GENERAL RULES */
+
+div.hero {
+	background-image: url('http://placehold.it/480x250/FD0808');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 100%;
+}
+
+
+/* MEDIA QUERY FOR TABLET SIZE */
+@media all and (min-width: 481px) {
+	.col-md-3 {
+		width: 48%;
+	}
+
+	div.hero {
+		background-image: url('http://placehold.it/1024x350/0DCB08');
+		height: 350px;
+	}
+}
+/* END MEDIA QUERY FOR TABLET SIZE */
+
+/* MEDIA QUERY FOR DESKTOP */
+@media all and (min-width: 1025px) {
+	.col-md-3 {
+		width: 23%;
+	}
+
+	div.hero {
+		background-image: url('http://placehold.it/1920x450/0022CD');
+		height: 450px;
+	}
+}
+/* MEDIA QUERY FOR DESKTOP */
+
+.clear:after {
+	clear: both;
+	content: "";
+	display: table;
+}
