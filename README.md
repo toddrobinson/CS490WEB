@@ -1,8 +1,6 @@
 # CS490WEB
 CS490WEB Homeworks
 
-http://web.cs.sunyit.edu/~robinsts/cs490web/
-
 <h3>HW1</h3>
 Creating a simple page without css.
 
